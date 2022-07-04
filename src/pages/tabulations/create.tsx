@@ -7,14 +7,10 @@ import { Subgroups } from "../../components/Subgroups";
 import { StyleHook } from "../../hooks/StyleHook";
 import mockTabulation from "./mock/tabulation.json";
 
-<<<<<<< HEAD
-// Criar mais uma tipagem
-=======
 type ItemSubgroups = {
   item: string;
 }
 
->>>>>>> abbc7eb13f8460b1ed9757f70bdcbcd465fe34ef
 type ContentType = {
   item: string;
   subgroup: ItemSubgroups[];
@@ -57,50 +53,6 @@ export default function Create() {
               justifyContent="space-between"
               align="center"
             >
-<<<<<<< HEAD
-              Importar
-            </Button>
-
-            <Text
-              mt="15px"
-              color="white"
-            >Criar JSON</Text>
-            
-            <Flex 
-              maxWidth={1120}
-            > 
-              <Box 
-                m="5px" 
-                width="30%"
-              > 
-                <Text p="8px" color="white" fontSize={["10px", "12px", "14px"]} textAlign="center">Tipo</Text>
-              </Box>
-              
-              <Box flexDirection="row" width="70%">
-                <Text p="8px" color="white" fontSize={["10px", "12px", "14px"]} textAlign="center">Item</Text>
-              </Box>                 
-            </Flex>
-
-            { newContent.content.map((content) => {
-                return (
-                  <Flex 
-                    key={content.group}
-                    maxWidth={1120}
-                  > 
-                    <Box 
-                      bg="gray.700" 
-                      m="5px" 
-                      borderRadius="5px" 
-                      width="30%"
-                    > 
-                      <Text p="8px" color="white" fontSize={["10px", "12px", "14px"]} textAlign="center">{content.group}</Text>
-                    </Box>
-                    
-                    <Box flexDirection="row" width="70%">
-                      <Subgroups subgroups={content.subgroups} /> 
-                    </Box>
-                                
-=======
               <Box
                 mr="3"
                 ml="2.4"
@@ -178,7 +130,6 @@ export default function Create() {
                   <Icon as={RiSubtractFill} color="white" fontSize="18px" bg="red" borderRadius="100%" cursor="pointer"></Icon>
                   <Icon as={RiAddLine} color="white" fontSize="18px" bg="blue" borderRadius="100%" cursor="pointer"></Icon>
 
->>>>>>> abbc7eb13f8460b1ed9757f70bdcbcd465fe34ef
                   </Flex>
                  
                   <Box
